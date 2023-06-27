@@ -1,0 +1,29 @@
+body {
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  align-content: center;
+  background-color: brown;
+  border: solid 1px black;
+  margin: 0;
+}
+
+.gameboard {
+  display: flex;
+  /* width and height dictates how many cell to fit */
+  width: 836px;
+  height: 850px;
+  flex-flow: row wrap;
+  background-color: coral;
+  border: solid 1px black;
+}
+
+.cell {
+  display: flex;
+  border: solid 1px black;
+  height: 50px;
+  width: 50px;
+  gap: 0px;
+}
