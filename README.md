@@ -1,0 +1,1 @@
+An attempt at the etch-a-sketch assignment provided by The Odin Project -- using only JavaScript to generate the entire page.

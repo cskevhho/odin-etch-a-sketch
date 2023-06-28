@@ -1,29 +1,38 @@
 body {
-  padding: 0;
+    padding: 0;
+    margin: 0;
+  }
+  
+  button {
+    margin: 20px;
+    padding: 16px;
+    background-color: paleturquoise;
+    border: 0;
+    border-radius: 8px;
+  }
+  
+  .wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .gameboard {
+    display: flex;
+    flex-wrap: wrap;
+    width: 880px; /* Dimensions have to be fixed? */
+    height: 880px;   
+    border:1px solid black;
 }
-
-.wrapper {
-  display: flex;
-  align-content: center;
-  background-color: brown;
-  border: solid 1px black;
-  margin: 0;
-}
-
-.gameboard {
-  display: flex;
-  /* width and height dictates how many cell to fit */
-  width: 836px;
-  height: 850px;
-  flex-flow: row wrap;
-  background-color: coral;
-  border: solid 1px black;
-}
-
-.cell {
-  display: flex;
-  border: solid 1px black;
-  height: 50px;
-  width: 50px;
-  gap: 0px;
-}
+  
+  .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    flex-basis: calc(100% / var(--grid-size));
+    flex-grow: 0;
+  }
+  
